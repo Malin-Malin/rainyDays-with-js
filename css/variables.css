@@ -1,0 +1,68 @@
+
+:root {
+  --buttonBackgroundColor: rgba(106, 67, 28, 1); /* Background color for buttons */
+  --buttonTextColor: rgba(236, 242, 240, 1); /* Text color for buttons */
+  --mainColor: rgba(10, 54, 65, 1); /* Color for titles, header background, text on hover buttons and navigation icons and text */
+  --boxHoverColor: rgba(177, 112, 47, 0.5); /* Hover background color for buttons, background for box */
+}
+
+.btn{
+  background-color: var(--buttonBackgroundColor);
+  color:var(--buttonTextColor);
+  /*width: 150px;*/
+  height: 40px;
+  display: inline-block;
+}
+
+p,
+a, 
+li,
+span,
+form,
+input,
+select,
+button,
+textarea{
+  text-align: left;
+  font-family: "Raleway", serif;
+}
+
+h1, 
+h2, 
+h3{
+  color: var(--mainColor);
+  font-family: "Julius Sans One", sans-serif;
+}
+
+.headerBackground{
+  background-color: var(--mainColor);
+  background-attachment: fixed;
+  padding:30px;
+  margin-top: -40px;
+  background-size: cover;
+  height: 200px;
+  width: auto;
+}
+
+img {
+  width: 100%; 
+  height: auto;
+  }
+
+.dividerLine{
+  max-width: 100%;
+  height: 5px;
+  background-color: var(--mainColor);
+  margin: 40px;
+}
+
+@media (max-width: 900px) {
+  .dividerLine{
+    margin-bottom: 20px;
+  }
+}
+
+.textcolor{
+ color: var(--buttonTextColor);
+}
+
