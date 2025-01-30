@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Secure and easy checkout process. Enter your billing and shipping details to complete your order quickly and safely.">
+    <meta name="keywords" content="checkout, billing, shipping, secure checkout, easy payment, order completion">
+    <meta name="author" content="Malin Skrettingland">
+    <link rel="stylesheet" href=".//css/styles.css">
+    <title>RainyDays | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/408f165299.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <nav class="navbar">
+                <div>
+                    <a href="comingSoon.html" aria-label="search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                </div>
+                <ul class="navbar-list">
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i><span
+                                class="navText">Home</span></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-message"></i><span
+                                class="navText">Contact</span></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-info"></i><span class="navText">About</span></a></li>
+                </ul>
+                <div class="navbarContainer">
+                    <a href="comingSoon.html" aria-label="My page"><i class="fa-solid fa-user fa-xl"></i></a>
+                    <a href="shoppingcart.html" aria-label="shoppingcart"><i
+                            class="fa-solid fa-cart-shopping fa-xl"></i>
+                            <span id="cart-count">0</span></a>
+                </div>
+            </nav>
+        </section>
+        <section class="headerBackground">
+            <img class=logo src=".//Images/RainyDays_Logo_hvit.02.png" alt="Rainydays Logo">
+        </section>
+    </header>
+    <main>
+        <section class="orderConfirmation">
+            <h1>Order confirmation:</h1>
+            <div class="shoppingCartContainer">
+                <div class="productInCart" id="cart-container"></div>
+            </div>
+            <p><strong>Order total: </strong> NOK <span id="cart-total-container">0,-</span></p>
+        </section>
+            <section class="paymentSuccessfull">
+                <img class="paymentImage" style="border-radius: 50%;" src="Images/ai-generated-8325844_1280_02.png"
+                    alt="ai-generated picture campsite in theme colors">
+                <article class="paymentText">
+                    <h1>payment successful</h1>
+                    <p>Thank you for your purchase! A receipt will be sent to your email within the next few minutes. If you
+                        encounter any issues with your product, feel free to contact our support team for assistance.</p>
+                    <a href="index.html" class="btn" aria-label="Contuinue shopping">Contuinue shopping</a>
+                </article>
+            </section>
+    </main>
+    <div class="dividerLine"></div>
+    <footer>
+        <div>
+            <img class=footerimg src=".//Images/RainyDays_Logo.png" alt="Rainydays Logo">
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-facebook fa-lg"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <br>&copy; Malin Skrettingland
+        </div>
+        <div id="info">
+            <p><i class="fa-solid fa-envelope"></i> info@rainydays.com</p>
+            <p><i class="fa-solid fa-phone"></i>+01 234 56 789</p>
+            <p><i class="fa-solid fa-location-dot"></i> Fairyland 101, The Moon</p>
+        </div>
+    </footer>
+</body>
+<script src="javaScript/cart.js"></script>
+<script src="javaScript/checkoutpage.js"></script>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with us! Reach out for support, feedback, or questions about your orders. We’re here to help.">
+    <meta name="keywords"
+        content="contact us, customer support, inquiries, help, feedback, order questions, assistance">
+    <meta name="author" content="Malin Skrettingland">
+    <link rel="stylesheet" href=".//css/styles.css">
+    <title>RainyDays | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/408f165299.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <nav class="navbar">
+                <div>
+                    <a href="comingSoon.html" aria-label="search"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+                </div>
+                <ul class="navbar-list">
+                    <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i><span
+                                class="navText">Home</span></a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-message"></i><span
+                                class="navText">Contact</span></a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-info"></i><span class="navText">About</span></a></li>
+                </ul>
+                <div class="navbarContainer">
+                    <a href="comingSoon.html" aria-label="My page"><i class="fa-solid fa-user fa-xl"></i></a>
+                    <a href="shoppingcart.html" aria-label="shoppingcart"><i
+                            class="fa-solid fa-cart-shopping fa-xl"></i>
+                            <span id="cart-count">0</span></a>
+                </div>
+            </nav>
+        </section>
+        <section class="headerBackground">
+            <img class=logo src=".//Images/RainyDays_Logo_hvit.02.png" alt="Rainydays Logo">
+        </section>
+    </header>
+    <main>
+        <h2>Get in touch with us</h2>
+        <section class="contactContainer" style="background-color:rgba(177, 112, 47, 0.5);">
+            <section class="container1">
+                <div>
+                    <h4><i class="fa-solid fa-location-dot"></i>Address</h4>
+                    <p>Fairyland 101</p>
+                    <p>The Moon</p>
+                </div>
+                <div>
+                    <h4><i class="fa-solid fa-phone"></i>Phone</h4>
+                    <p>+01 234 56 789</p>
+                </div>
+                <div>
+                    <h4><i class="fa-solid fa-clock"></i>Work time</h4>
+                    <p>Monday-Friday: </p>
+                    <p>9:00 - 22:00</p>
+                    <p>Saturday-Sunday:</p>
+                    <p>9:00 - 21:00</p>
+                </div>
+            </section>
+            <section class="container2">
+                <form class="form" action="form-success.php" method="post">
+                    <fieldset>
+                        <legend></legend>
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="name" class="form__input" required>
+                        <label for="email">Email address</label>
+                        <input type="text" name="email" id="email" class="form__input" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="form__input">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="form__input" required></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send Now" class="btn btn-small"
+                        onclick="window.location.href=`index.html`" aria-label="send contactform">
+                </form>
+            </section>
+        </section>
+    </main>
+    <div class="dividerLine"></div>
+    <footer>
+        <div>
+            <img class=footerimg src=".//Images/RainyDays_Logo.png" alt="Rainydays Logo">
+        </div>
+        <div>
+            <i class="fa-brands fa-instagram fa-lg"></i>
+            <i class="fa-brands fa-facebook fa-lg"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <br>&copy; Malin Skrettingland
+        </div>
+        <div id="info">
+            <p><i class="fa-solid fa-envelope"></i> info@rainydays.com</p>
+            <p><i class="fa-solid fa-phone"></i>+01 234 56 789</p>
+            <p><i class="fa-solid fa-location-dot"></i> Fairyland 101, The Moon</p>
+        </div>
+    </footer>
+</body>
+<script src="javaScript/cart.js"></script>
+</html>
