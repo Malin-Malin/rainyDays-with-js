@@ -1,52 +1,52 @@
-# HTML & CSS Course Assignment
+# Rainy Days - Interactive Online Store
 
-## Goal
-To put into practice everything you’ve learned about HTML and CSS over this course by bringing your design alive.
+## Project Overview
+This project is an interactive online store built using JavaScript, HTML, and CSS. The store dynamically fetches and displays products from an API, allowing users to browse, filter, and manage their shopping cart. The implementation aligns with the provided user stories to create a functional e-commerce experience.
 
-## Brief
+## Recent Changes and Updates
+### 1. **Integration of JavaScript and API Fetching**
+- Implemented JavaScript to dynamically fetch product data from the API endpoint.
+- Products are now displayed on the homepage without requiring hardcoded HTML.
+- Used `fetch()` to retrieve product data and update the UI in real-time.
 
-- You must deliver a properly functioning, responsive website for the assignment brief you chose in Design 1.
+### 2. **Product Listing and Filtering**
+- Products are displayed dynamically using JavaScript.
+- Implemented filtering functionality based on **category, gender, or genre**.
+- Users can select filters and see the product list update accordingly.
 
-- The site needs to have every page listed in the site architecture on your chosen brief. Certain functionality requiring JavaScript can be mimicked; for example, a login page could link across from the ‘Sign in’ button.
+### 3. **Single Product Page**
+- Clicking on a product directs the user to a **single product page** that provides detailed information.
+- Product details are dynamically loaded using the product ID from the API.
 
-- You must deliver a properly functioning, responsive website for the assignment brief you chose in Design 1. The website should be able to navigate from one page to another from the navigation menu as well as from buttons and/or arrows.
+### 4. **Shopping Cart Functionality**
+- Users can **add** products to the shopping cart, which is stored in `localStorage`.
+- A **cart counter** updates in real-time to show the number of items in the cart.
+- Implemented a "Remove from Cart" function to allow users to delete items from their basket.
+- A checkout page summarizes all items in the cart.
 
-- The site needs to have every page listed in the site architecture on your chosen brief. Certain functionality requiring JavaScript can be mimicked; for example, a login page could link across from the ‘Sign in’ button. This assignment should be written in purely HTML and CSS.
+### 5. **Order Confirmation Page**
+- Once users proceed to checkout, an order confirmation screen is displayed.
+- The confirmation screen provides a summary of the purchase, ensuring a complete shopping experience.
 
-- Ensure that all of your images are compressed to around 200KB.
+## Technologies Used
+- **JavaScript (ES6+)** for dynamic UI updates and API interactions.
+- **HTML & CSS** for structure and styling.
+- **Fetch API** for retrieving product data.
 
-- The HTML should be semantic, neatly formatted and valid.
+## Next Steps and Improvements
+- Improve user experience by adding **loading states** while fetching data.
+- Implement a **search functionality** for quick product look-up.
+- Add **error handling** to manage API failures more gracefully.
+- Ensure responsiveness and accessibility improvements.
 
-- The CSS should follow the DRY principle and be easy to read.
+## API Endpoint Used
+```
+https://v2.api.noroff.dev/rainy-days
+```
 
-- The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. Please do not use a CSS framework like Bootstrap; we want to see that you can build responsive sites without the help of a framework.
+## How to Run the Project
+1. Clone the repository.
+2. Open `index.html` in a browser.
+3. Ensure JavaScript is enabled to fetch and display products dynamically.
 
-- The site should be WCAG compliant, SEO, performance and accessibility should be taken into account.
-
-- Each page should have a unique `<meta name="description">, <title>, and <h1>`.
-
-- You should not use copied code in your submission. All code submitted must be written by yourself. You may use external sources to show you how to achieve specific effects, which should be included in your report.
-
-## Process
-
-1. Clone the repository to your computer using GitHub Desktop.
-2. Spend some time going through your design files and thinking about which tags and approaches you will need.
-3. Write a basic plan for how to approach this, what will you do first? What will you do last?
-4. Work through your plan to create HTML and CSS files for each page.
-5. Test your website using your developer tools and also test on major browsers and various devices.
-8. Validate your code using the Markup Validation Service
-9. Use the WAVE Web Accessibility Evaluation Tools to test that your site matches best practices for accessibility
-10. Go through the marking criteria and ensure your website meets each criteria.
-11. Deploy your site on Github Pages - remember that you can still make changes after it is deployed.
-12. When your site is ready, post it for Peer Review on Teams or Moodle.
-13. Look at the work of your peers and write a review for them.
-14. Make adjustments based on the feedback you gather.
-15. Delivery in Moodle.
-
-## Submission
-
-You need to submit the following:
-
-1. A link to your GitHub repository. Your last commit must be before your deadline.
-2. A link to your website, live on GitHub Pages.
-3. A report using the [this](https://noroff.sharepoint.com/:w:/r/sites/FED1-August2023Full-time2/_layouts/15/Doc.aspx?sourcedoc=%7B1A563EDD-CF1A-4F1B-ABC2-DCAF79AB1344%7D&file=HTML%20_%20CSS%20CA%20Report.docx&action=default&mobileredirect=true&wdOrigin=TEAMS-ASSIGN-WEB.ASSIGN-STUD-VIEW.STUD) template.
+This project showcases an interactive shopping experience using modern JavaScript techniques, focusing on dynamic product fetching, filtering, and cart management.
