@@ -5,7 +5,6 @@ const filterBtn = document.getElementById("filter-btn");
 
 let allProducts = [];
 
-// Hent produkter fra API-et
 async function fetchProducts() {
     try {
         const response = await fetch(apiUrl);
@@ -43,7 +42,7 @@ function displayProducts(products) {
             <p><strong>Category:</strong> ${product.tags.join(", ")}</p>
             <img src="${product.image.url}" alt="${product.image.alt}">
             <p><strong>Price:</strong> NOK ${product.price}</p>
-            <a href="http://127.0.0.1:3000/productPage.html?pid=${product.id}">View more</a>
+            <a href="./productPage.html?pid=${product.id}">View more</a>
             <p>qty= ${getProductQty(product.id)}</p>
         `;
        
