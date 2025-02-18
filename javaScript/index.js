@@ -48,9 +48,9 @@ function displayProducts(products) {
             <p><strong>Gender:</strong> ${product.gender}</p>
             <p><strong>Category:</strong> ${product.tags.join(", ")}</p>
             <img src="${product.image.url}" alt="${product.image.alt}">
+            <a href="./product/index.html?pid=${product.id}" class="btn">View more</a>
             <p><strong>Price:</strong> NOK ${product.price}</p>
-            <a href="./product/index.html?pid=${product.id}">View more</a>
-            <p>qty= ${getProductQty(product.id)}</p>
+            <p>Quantity = ${getProductQty(product.id)}</p>
         `;
        
         var btnContainer = document.createElement('div');
