@@ -42,7 +42,7 @@ function displayProducts(products) {
             <p><strong>Category:</strong> ${product.tags.join(", ")}</p>
             <img src="${product.image.url}" alt="${product.image.alt}">
             <p><strong>Price:</strong> NOK ${product.price}</p>
-            <a href="./productPage.html?pid=${product.id}">View more</a>
+            <a href="./product/index.html?pid=${product.id}">View more</a>
             <p>qty= ${getProductQty(product.id)}</p>
         `;
        
