@@ -6,6 +6,7 @@ const filterBtn = document.getElementById("filter-btn");
 let allProducts = [];
 
 async function fetchProducts() {
+    showLoader();
     try {
         const response = await fetch(apiUrl);
         if (!response.ok) {
@@ -13,17 +14,23 @@ async function fetchProducts() {
         }
         const data = await response.json();
         allProducts = data.data;
-        var productsToDisplay = [];
-        const selectedGender = genderFilter.value;
-        if (selectedGender !== "all") {
-            productsToDisplay = allProducts.filter(product => product.gender === selectedGender);
-        }else{
-            productsToDisplay = allProducts;
-        }
-        displayProducts(productsToDisplay);
+        filterProducts();
     } catch (error) {
         productContainer.innerHTML = `<p>Failed to load products: ${error.message}</p>`;
+    } finally {
+        hideLoader();
     }
+}
+
+function filterProducts(){
+    var productsToDisplay = [];
+    const selectedGender = genderFilter.value;
+    if (selectedGender !== "all") {
+        productsToDisplay = allProducts.filter(product => product.gender === selectedGender);
+    }else{
+        productsToDisplay = allProducts;
+    }
+    displayProducts(productsToDisplay);
 }
 
 function displayProducts(products) {
@@ -76,6 +83,15 @@ function displayProducts(products) {
         productContainer.appendChild(productElement);
     });
 }
+function showLoader() {
+    const loader = document.querySelector('.loader');
+    loader.hidden = false;
+  }
+  
+  function hideLoader() {
+    const loader = document.querySelector('.loader');
+    loader.hidden = true;
+  }
 
-filterBtn.addEventListener("click", fetchProducts);
+filterBtn.addEventListener("click", filterProducts);
 fetchProducts();

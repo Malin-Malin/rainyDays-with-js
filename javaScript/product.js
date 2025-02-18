@@ -3,6 +3,7 @@ const resultsContainer = document.getElementById("results");
 
 // Function to fetch a single product by ID
 async function fetchProductById(productId) {
+    showLoader();
     try {
         const response = await fetch(`${apiBaseUrl}/${productId}`);
         if (!response.ok) {
@@ -12,6 +13,8 @@ async function fetchProductById(productId) {
         displaySingleProduct(data.data);
     } catch (error) {
         resultsContainer.innerHTML = `<p>Product not found: ${error.message}</p>`;
+    } finally {
+        hideLoader();
     }
 }
 
@@ -44,6 +47,16 @@ function getQueryVariable(variable) {
     }
     return "b8b528fc-6c60-41f6-a5a9-9a8b27a9482a";
     // alert('Query Variable ' + variable + ' not found');
+  }
+
+  function showLoader() {
+    const loader = document.querySelector('.loader');
+    loader.hidden = false;
+  }
+  
+  function hideLoader() {
+    const loader = document.querySelector('.loader');
+    loader.hidden = true;
   }
 
 fetchProductById(getQueryVariable("pid"));
