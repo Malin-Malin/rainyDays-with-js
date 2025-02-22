@@ -4,8 +4,9 @@ const cartTotalContainer = document.getElementById("cart-total-container");
 
 var cart = JSON.parse(localStorage.getItem("cart"));
 if (cart === null) {
-    cart={};
+    cart = {};
 }
+
 function addToCart(product, qty=1) {
   //Add quantity to cart, default to 1.
     if (cart[product.id] !== undefined) {
@@ -46,6 +47,7 @@ function clearCart() {
 }
 
 function displayCart(displayRemoveBtn=true) {
+    if (cartContainer === null){return;}
     cartContainer.innerHTML = "";
         if (Object.keys(cart).length === 0) {
             cartContainer.innerHTML = "<p>Your cart is empty.</p>";
@@ -84,6 +86,7 @@ function displayCart(displayRemoveBtn=true) {
 }
 
 function displayCartTotal() {
+    if (cartTotalContainer === null){return;}
     cartTotalContainer.innerText="";
     if (Object.keys(cart).length === 0) {
         cartTotalContainer.innerText = "$ 0";
@@ -123,3 +126,5 @@ function getProductQty(productId) {
 }
 
 displayCartCount();
+displayCart();
+displayCartTotal();

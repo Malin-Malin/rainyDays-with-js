@@ -1,2 +1,0 @@
-displayCartTotal();
-displayCart();

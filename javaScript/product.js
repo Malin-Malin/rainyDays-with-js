@@ -46,7 +46,7 @@ function getQueryVariable(variable) {
       }
     }
     return "b8b528fc-6c60-41f6-a5a9-9a8b27a9482a";
-    // alert('Query Variable ' + variable + ' not found');
+    //alert('Query Variable ' + variable + ' not found');
   }
 
   function showLoader() {

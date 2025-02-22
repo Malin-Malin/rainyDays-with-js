@@ -55,6 +55,7 @@ function displayProducts(products) {
        
         var btnContainer = document.createElement('div');
         btnContainer.classList.add('btnShop');
+
         //Add button
         var addBtn = document.createElement('input');
         addBtn.type = "button"
@@ -65,8 +66,6 @@ function displayProducts(products) {
         addBtn.value="+";
         addBtn.classList.add('btn', 'btnShop');
         btnContainer.appendChild(addBtn);
-
-        
         
         //remove button
         var removeBtn = document.createElement('input');
@@ -83,15 +82,16 @@ function displayProducts(products) {
         productContainer.appendChild(productElement);
     });
 }
+
 function showLoader() {
     const loader = document.querySelector('.loader');
     loader.hidden = false;
-  }
+}
   
-  function hideLoader() {
-    const loader = document.querySelector('.loader');
-    loader.hidden = true;
-  }
+function hideLoader() {
+const loader = document.querySelector('.loader');
+loader.hidden = true;
+}
 
 filterBtn.addEventListener("click", filterProducts);
 fetchProducts();
