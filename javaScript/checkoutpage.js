@@ -1,2 +1,1 @@
-displayCartTotal();
 displayCart(false);
