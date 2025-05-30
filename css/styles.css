@@ -1,25 +1,3 @@
-@import url("./reset.css");
-@import url("./variables.css");
-
-/* For all pages */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 1.125rem;
-  line-height: 1.5;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: var(--mainColor);
-}
-
 /* header */
 
 .logo {
@@ -392,7 +370,7 @@ nav li {
   margin: 0;
 }
 
-.cart-line{
+.cart-line {
   display: flex;
   flex-direction: column;
   align-items: center;

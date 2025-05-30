@@ -9,8 +9,8 @@
     <meta name="keywords"
         content="shopping cart, selected items, cart summary, order, review items, proceed to checkout">
     <meta name="author" content="Malin Skrettingland">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>RainyDays | Home</title>
+    <link rel="stylesheet" href="../css/globalStyleSheet.css">
+    <title>RainyDays | Checkout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
@@ -23,31 +23,7 @@
 </head>
 
 <body>
-    <header>
-        <section>
-            <nav class="navbar">
-                <div>
-                    <a href="../comingSoon.html" aria-label="search"><i
-                            class="fa-solid fa-magnifying-glass fa-xl"></i></a>
-                </div>
-                <ul class="navbar-list">
-                    <li><a href="../index.html"><i class="fa-solid fa-house-chimney"></i><span
-                                class="navText">Home</span></a></li>
-                    <li><a href="../contact.html"><i class="fa-solid fa-message"></i><span
-                                class="navText">Contact</span></a></li>
-                    <li><a href="../about.html"><i class="fa-solid fa-info"></i><span class="navText">About</span></a>
-                    </li>
-                </ul>
-                <div class="navbarContainer">
-                    <a href="../comingSoon.html" aria-label="My page"><i class="fa-solid fa-user fa-xl"></i></a>
-                    <a href="./index.html" aria-label="shoppingcart"><i class="fa-solid fa-cart-shopping fa-xl"></i>
-                        <span id="cart-count">0</span></a>
-                </div>
-            </nav>
-        </section>
-        <section class="headerBackground">
-            <img class=logo src="../Images/RainyDays_Logo_hvit.02.png" alt="Rainydays Logo">
-        </section>
+    <header id="header-container">
     </header>
     <main>
         <h1>cart</h1>
@@ -126,23 +102,10 @@
         </section>
     </main>
     <div class="dividerLine"></div>
-    <footer>
-        <div>
-            <img class=footerimg src="../Images/RainyDays_Logo.png" alt="Rainydays Logo">
-        </div>
-        <div>
-            <i class="fa-brands fa-instagram fa-lg"></i>
-            <i class="fa-brands fa-facebook fa-lg"></i>
-            <i class="fa-brands fa-pinterest"></i>
-            <br>&copy; Malin Skrettingland
-        </div>
-        <div id="info">
-            <p><i class="fa-solid fa-envelope"></i> info@rainydays.com</p>
-            <p><i class="fa-solid fa-phone"></i>+01 234 56 789</p>
-            <p><i class="fa-solid fa-location-dot"></i> Fairyland 101, The Moon</p>
-        </div>
+    <footer id="footer-container">
     </footer>
 </body>
 <script src="../javaScript/cart.js"></script>
+<script src="javaScript/components/loadComponents.js"></script>
 
 </html>

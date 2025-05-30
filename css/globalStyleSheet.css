@@ -1,0 +1,29 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("../components/footer.html");
+@import url("../components/header.html");
+@import url("./styles.css");
+
+/* For all pages */
+
+body {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+.highlighted-text {
+  color: rgba(106, 67, 28, 1);
+}
