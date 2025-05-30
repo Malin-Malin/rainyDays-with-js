@@ -1,0 +1,61 @@
+/* contact page*/
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+  background-color: white;
+  padding: 30px;
+  margin: 10px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  text-align: left;
+  min-width: 340px;
+}
+
+.container1 h4 {
+  margin: 10px 0;
+}
+
+.container1 p {
+  margin: 0px;
+}
+
+.container2 {
+  width: 30%;
+  min-width: 550px;
+}
+
+@media (max-width: 1200px) {
+  .contactContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .container1 {
+    min-width: 250px;
+  }
+  .container2 {
+    min-width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .container1 {
+    min-width: 200px;
+  }
+  .container2 {
+    min-width: 300px;
+  }
+}

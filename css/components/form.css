@@ -1,0 +1,22 @@
+/* Form */
+.form__input,
+#shipping_methods {
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form {
+  text-align: left;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px;
+}
