@@ -20,20 +20,32 @@ async function fetchProductById(productId) {
 
 // Function to display product details
 function displaySingleProduct(product) {
-    resultsContainer.innerHTML = "";  // Clear previous content
+  resultsContainer.innerHTML = "";  // Clear previous content
 
-    const productElement = document.createElement("div");
-    productElement.classList.add("product-details");
+  const productElement = document.createElement("div");
+  productElement.classList.add("product-details");
 
-    productElement.innerHTML = `
-        <h2>${product.title}</h2>
-        <img src="${product.image.url}" alt="${product.image.alt}">
-        <p><strong>Description:</strong> ${product.description}</p>
-        <p><strong>Size:</strong> ${product.sizes.join(", ")}</p>
-        <p><strong>Price:</strong> ${product.price} $</p>
-    `;
+  productElement.innerHTML = `
+      <h2>${product.title}</h2>
+      <img src="${product.image.url}" alt="${product.image.alt}">
+      <p><strong>Description:</strong> ${product.description}</p>
+      <p><strong>Size:</strong> ${product.sizes.join(", ")}</p>
+      <p><strong>Price:</strong> ${product.price} $</p>
+  `;
+  
+  buttonElement = document.createElement("button");
+  buttonElement.classList.add("btn");
+  buttonElement.textContent = "Add to Cart";
+  buttonElement.addEventListener("click", function() {
+    addToCart(product);
+    alert("Product added to cart!");
+  });
 
-    resultsContainer.appendChild(productElement);
+  productElement.appendChild(buttonElement);
+  
+  resultsContainer.appendChild(productElement);
+
+   
 }
 
 function getQueryVariable(variable) {

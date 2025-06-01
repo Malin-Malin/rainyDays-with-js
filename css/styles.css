@@ -362,6 +362,7 @@
   justify-content: center;
   gap: 60px;
   padding: 60px;
+  background-color: var(--boxHoverColor);
 }
 .paymentImage {
   max-width: 300px;

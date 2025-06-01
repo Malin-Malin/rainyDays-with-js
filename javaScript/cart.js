@@ -1,5 +1,5 @@
 const cartContainer = document.getElementById("cart-container");
-const cartCountContainer = document.getElementById("cart-count");
+var cartCountContainer = document.getElementById("cart-count");
 const cartTotalContainer = document.getElementById("cart-total-container");
 
 var cart = JSON.parse(localStorage.getItem("cart"));
@@ -102,7 +102,10 @@ function displayCartTotal() {
 }
 
 function displayCartCount() {
-    if (cartCountContainer === null){return;}
+    if (cartCountContainer === null){
+        cartCountContainer = document.getElementById("cart-count");
+        if (cartCountContainer === null) return;
+    }
     cartCountContainer.innerText="";
     if (Object.keys(cart).length === 0) {
         cartCountContainer.innerText = "0";

@@ -9,6 +9,7 @@ async function loadComponent(url, container) {
     }
     const text = await response.text();
     container.innerHTML = text;
+    displayCartCount();
   } catch (error) {
     console.error(`Error loading component from ${url}:`, error);
   }

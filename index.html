@@ -58,16 +58,18 @@
         </section>
         <h1>Rainy Days Collection</h1>
         <div class="loader">Loading...</div>
-        <div id="product-container" class="product-grid"></div>
-        <section id="filters">
-            <label for="gender">Gender:</label>
-            <select id="gender">
-                <option value="all">All</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-            </select>
+        <section id="filters" class="flex-container">
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="all">All</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
             <button id="filter-btn" class="btn">Apply Filters</button>
         </section>
+        <div id="product-container" class="product-grid"></div>
         <div>
             <img class="imgdivider" src="./Images/couple-trekking-through-rain-highlands.jpg"
                 alt="two people backpacking with hiking jackets">
@@ -77,8 +79,8 @@
     <footer id="footer-container">
     </footer>
 </body>
-<script src="javaScript/cart.js"></script>
-<script src="javaScript/index.js"></script>
-<script src="javaScript/components/load-components.js"></script>
+<script src="/javaScript/components/load-components.js"></script>
+<script src="/javaScript/cart.js"></script>
+<script src="/javaScript/index.js"></script>
 
 </html>

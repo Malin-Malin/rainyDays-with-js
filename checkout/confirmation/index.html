@@ -25,30 +25,31 @@
     <header id="header-container">
     </header>
     <main>
-        <section class="orderConfirmation">
-            <h1>Order confirmation:</h1>
-            <div class="shoppingCartContainer">
-                <div class="productInCart" id="cart-container"></div>
-            </div>
-            <p><strong>Order total:</strong> NOK <span id="cart-total-container">0,-</span></p>
-        </section>
+        <h1>Order confirmation:</h1>
         <section class="paymentSuccessfull">
             <img class="paymentImage" style="border-radius: 50%;" src="../../Images/ai-generated-8325844_1280_02.png"
                 alt="ai-generated picture campsite in theme colors">
             <article class="paymentText">
-                <h1>payment successful</h1>
+                <h2>payment successful</h2>
                 <p>Thank you for your purchase! A receipt will be sent to your email within the next few minutes. If you
                     encounter any issues with your product, feel free to contact our support team for assistance.</p>
-                <a href="../index.html" class="btn" aria-label="Contuinue shopping">Contuinue shopping</a>
+                <a href="/index.html" class="btn" aria-label="Contuinue shopping">Contuinue shopping</a>
             </article>
+        </section>
+        <section class="orderConfirmation">
+            <h2>Order Summary</h2>
+            <div class="shoppingCartContainer">
+                <div class="productInCart" id="cart-container"></div>
+            </div>
+            <p><strong>Order total:</strong> NOK <span id="cart-total-container">0,-</span></p>
         </section>
     </main>
     <div class="dividerLine"></div>
     <footer id="footer-container">
     </footer>
 </body>
+<script src="../../javaScript/components/load-components.js"></script>
 <script src="../../javaScript/cart.js"></script>
 <script src="../../javaScript/checkout-page.js"></script>
-<script src="../../javaScript/components/load-components.js"></script>
 
 </html>
