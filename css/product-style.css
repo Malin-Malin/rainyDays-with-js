@@ -10,27 +10,32 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  max-width: 1500px;
+  margin: 50px auto;
 }
 
 .product-grid h3 {
   height: 75px;
 }
+
 .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
   width: 250px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
   max-width: auto;
-  border-radius: 10px;
   height: 250px;
 }
 
-.product h2 {
+.product h3 {
   font-size: 18px;
   color: #555;
 }

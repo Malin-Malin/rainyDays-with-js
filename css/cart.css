@@ -64,6 +64,7 @@
 }
 
 .shippingInfoContainer {
+  background-color: var(--boxHoverColor);
   display: flex;
   justify-content: center;
   padding: 20px;
