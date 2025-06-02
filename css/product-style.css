@@ -12,6 +12,9 @@
   gap: 20px;
 }
 
+.product-grid h3 {
+  height: 75px;
+}
 .product {
   width: 250px;
   background-color: #fff;

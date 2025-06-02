@@ -23,14 +23,17 @@ function displaySingleProduct(product) {
   resultsContainer.innerHTML = "";  // Clear previous content
 
   const productElement = document.createElement("div");
-  productElement.classList.add("product-details");
 
+  productElement.classList.add("product-container");
   productElement.innerHTML = `
-      <h2>${product.title}</h2>
+      <h1>${product.title}</h1>
+      <div class="product-details">
       <img src="${product.image.url}" alt="${product.image.alt}">
+      <div>
       <p><strong>Description:</strong> ${product.description}</p>
       <p><strong>Size:</strong> ${product.sizes.join(", ")}</p>
       <p><strong>Price:</strong> ${product.price} $</p>
+      </div></div>
   `;
   
   buttonElement = document.createElement("button");
