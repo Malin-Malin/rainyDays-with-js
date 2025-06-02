@@ -1,0 +1,123 @@
+/*Cart/ checkout page*/
+
+.shoppingCartContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.productInCart {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.productInCart img {
+  width: 200px;
+  height: auto;
+}
+
+.productInCart p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.cart-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--boxHoverColor);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.paymentMethods {
+  text-align: left;
+}
+
+.cartTotalContainer {
+  background-color: var(--boxHoverColor);
+  width: 300px;
+  height: 350px;
+  border-radius: 8px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartTotal {
+  background-color: white;
+  width: 230px;
+  height: 280px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cartTotal p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.shippingInfoContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .shippingInfoContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .shoppingCartContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .productInCart {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .productInCart p {
+    text-align: center;
+    flex-direction: column;
+  }
+  .cartTotal {
+    width: 80%;
+  }
+}
+
+@media (max-width: 560px) {
+  .shoppingCartContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .cartTotalContainer {
+    margin: 30px 0;
+    height: auto;
+  }
+  .cartTotal {
+    background-color: white;
+    flex-direction: row;
+    width: 230px;
+    height: auto;
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .productInCart {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

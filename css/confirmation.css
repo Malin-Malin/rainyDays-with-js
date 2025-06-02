@@ -1,0 +1,41 @@
+/*Payment successfull 
+  / Confirmation*/
+
+.orderConfirmation p {
+  text-align: center;
+}
+.paymentSuccessfull {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px;
+  background-color: var(--boxHoverColor);
+}
+.paymentImage {
+  max-width: 300px;
+  height: auto;
+  min-width: 200px;
+}
+
+.paymentText {
+  padding: 0 8%;
+}
+
+@media (max-width: 900px) {
+  .paymentSuccessfull {
+    padding: 8%;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .paymentSuccessfull {
+    font-size: medium;
+    flex-direction: column-reverse;
+    padding: 10%;
+  }
+  .paymentText {
+    width: fit-content;
+  }
+}

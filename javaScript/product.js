@@ -42,6 +42,7 @@ function displaySingleProduct(product) {
   buttonElement.addEventListener("click", function() {
     addToCart(product);
     alert("Product added to cart!");
+    window.location.href = "/index.html#product-container"; // Redirect to home page
   });
 
   productElement.appendChild(buttonElement);
