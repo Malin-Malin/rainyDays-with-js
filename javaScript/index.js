@@ -8,13 +8,13 @@ let allProducts = [];
 async function fetchProducts() {
     showLoader();
     try {
-        const response = await fetch(apiUrl);
-        if (!response.ok) {
-            throw new Error("Failed to fetch products");
-        }
-        const data = await response.json();
-        allProducts = data.data;
-        filterProducts();
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+        throw new Error("Failed to fetch products");
+    }
+    const data = await response.json();
+    allProducts = data.data;
+    filterProducts();
     } catch (error) {
         productContainer.innerHTML = `<p>Failed to load products: ${error.message}</p>`;
     } finally {
@@ -37,7 +37,7 @@ function displayProducts(products) {
     productContainer.innerHTML = "";
     if (products.length === 0) {
         productContainer.innerHTML = "<p>No products found.</p>";
-        return;
+    return;
     }
 
     products.forEach(product => {
@@ -89,8 +89,8 @@ function showLoader() {
 }
   
 function hideLoader() {
-const loader = document.querySelector('.loader');
-loader.hidden = true;
+    const loader = document.querySelector('.loader');
+    loader.hidden = true;
 }
 
 filterBtn.addEventListener("click", filterProducts);
