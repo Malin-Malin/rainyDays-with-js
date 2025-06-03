@@ -1,21 +1,10 @@
 :root {
-  --buttonBackgroundColor: rgba(
-    106,
-    67,
-    28,
-    1
-  ); /* Background color for buttons */
-  --buttonTextColor: rgba(236, 242, 240, 1); /* Text color for buttons */
-  --mainColor: rgba(
-    10,
-    54,
-    65,
-    1
-  ); /* Color for titles, header background, text on hover buttons and navigation icons and text */
-  --boxHoverColor: rgba(
-    177,
-    112,
-    47,
-    0.5
-  ); /* Hover background color for buttons, background for box */
+  /* Background color for buttons */
+  --buttonBackgroundColor: rgba(106, 67, 28, 1);
+  /* Text color for buttons */
+  --buttonTextColor: rgba(236, 242, 240, 1);
+  /* Color for titles, header background, text on hover buttons and navigation icons and text */
+  --mainColor: rgba(10, 54, 65, 1);
+  /* Hover background color for buttons, background for box */
+  --boxHoverColor: rgba(177, 112, 47, 0.5);
 }

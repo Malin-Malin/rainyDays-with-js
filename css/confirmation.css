@@ -1,10 +1,6 @@
-/*Payment successfull 
-  / Confirmation*/
+/*------------Payment successfull / Confirmation--------------*/
 
-.orderConfirmation p {
-  text-align: center;
-}
-.paymentSuccessfull {
+.payment-successfull {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,30 +8,31 @@
   padding: 60px;
   background-color: var(--boxHoverColor);
 }
-.paymentImage {
+.payment-image {
   max-width: 300px;
   height: auto;
   min-width: 200px;
+  border-radius: 50%;
 }
 
-.paymentText {
+.payment-text {
   padding: 0 8%;
 }
 
 @media (max-width: 900px) {
-  .paymentSuccessfull {
+  .payment-successfull {
     padding: 8%;
     gap: 30px;
   }
 }
 
 @media (max-width: 700px) {
-  .paymentSuccessfull {
+  .payment-successfull {
     font-size: medium;
     flex-direction: column-reverse;
     padding: 10%;
   }
-  .paymentText {
+  .payment-text {
     width: fit-content;
   }
 }

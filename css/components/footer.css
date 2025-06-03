@@ -1,4 +1,4 @@
-/* Footer */
+/* -------------Footer---------- */
 footer {
   margin-top: 50px;
   display: grid;
@@ -6,15 +6,12 @@ footer {
   align-items: center;
 }
 
-.footerimg {
+.footer-img {
   width: 100%;
   max-width: 300px;
   padding-bottom: 30px;
 }
 
-footer div {
-  text-align: center;
-}
 footer p {
   margin: 10px;
   align-items: center;
@@ -28,6 +25,17 @@ footer .fa-brands {
   margin-bottom: 30px;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--mainColor);
+}
+#info {
+  color: var(--mainColor);
+}
+
 @media (max-width: 900px) {
   footer {
     display: flex;
@@ -35,7 +43,7 @@ footer .fa-brands {
     text-align: center;
     margin-top: 0;
   }
-  .footerimg {
+  .footer-img {
     margin: 20px 0;
     max-width: 250px;
   }
@@ -56,7 +64,7 @@ footer .fa-brands {
   footer div:nth-child(3) {
     order: 2;
   }
-  .footerimg #info {
+  .footer-img #info {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     text-align: center;

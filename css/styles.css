@@ -1,4 +1,4 @@
-/* Home page */
+/* ---------------Home page-------------- */
 
 .homepage-start {
   max-width: 1300px;
@@ -65,7 +65,7 @@
   }
 }
 
-/* contact page*/
+/* ------------------ontact page---------------*/
 
 .contact-container {
   display: flex;

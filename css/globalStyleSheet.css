@@ -4,17 +4,33 @@
 @import url("./components/header.css");
 @import url("./styles.css");
 
-/* For all pages */
+/* --------For all pages------------------ */
 
 body {
   font-size: 1.125rem;
   line-height: 1.5;
   text-align: center;
-  text-align: center;
   margin: 0;
   background-color: #f4f4f4;
 }
 
+.display-hidden {
+  display: none;
+}
+
+/* ---------------text--------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--mainColor);
+  font-family: "Julius Sans One", sans-serif;
+}
+h1 {
+  color: #333;
+}
 p,
 a,
 li,
@@ -25,37 +41,11 @@ select,
 button,
 textarea {
   text-align: left;
-  font-family: "Raleway", serif;
+  font-family: "Raleway", Arial, serif;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--mainColor);
-  font-family: "Julius Sans One", sans-serif;
-}
-
-/* font-family: Arial, sans-serif; */
-
-.headerBackground {
-  background-color: var(--mainColor);
-  background-attachment: fixed;
-  padding: 30px;
-  margin-top: -40px;
-  background-size: cover;
-  height: 200px;
-  width: auto;
-}
-
 a {
   text-decoration: none;
   color: var(--mainColor);
-}
-
-h1 {
-  color: #333;
 }
 
 .textcolor {
@@ -66,7 +56,7 @@ h1 {
   color: rgba(106, 67, 28, 1);
 }
 
-/* buttons */
+/* --------------------buttons------------------- */
 
 .btn {
   font-size: 1.2rem;
@@ -108,25 +98,28 @@ h1 {
   color: var(--mainColor);
 }
 
-/* Image */
+/* --------------------Image------------------------- */
 img {
   width: 100%;
   height: auto;
 }
 
-/* Details */
-.dividerLine {
+/* -----------------------Details--------------------- */
+.divider-line {
   max-width: 100%;
   height: 5px;
   background-color: var(--mainColor);
   margin: 40px;
 }
 @media (max-width: 900px) {
-  .dividerLine {
+  .divider-line {
     margin-bottom: 20px;
   }
 }
 
 .text-align-left {
   text-align: left;
+}
+.text-align-center {
+  text-align: center;
 }
