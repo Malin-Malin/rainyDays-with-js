@@ -11,7 +11,7 @@ body {
   line-height: 1.5;
   text-align: center;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: var(--backgrounColor);
 }
 
 .display-hidden {
@@ -53,7 +53,7 @@ a {
 }
 
 .highlighted-text {
-  color: rgba(106, 67, 28, 1);
+  color: var(--buttonBackgroundColor);
 }
 
 /* --------------------buttons------------------- */
@@ -61,7 +61,7 @@ a {
 .btn {
   font-size: 1.2rem;
   padding: 8px 60px;
-  border-radius: 8px;
+  border-radius: var(--borderRadius);
   text-align: center;
   transition: all 1s ease-in-out;
   white-space: nowrap;
@@ -122,4 +122,18 @@ img {
 }
 .text-align-center {
   text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }

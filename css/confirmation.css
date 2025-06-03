@@ -12,7 +12,7 @@
   max-width: 300px;
   height: auto;
   min-width: 200px;
-  border-radius: 50%;
+  border-radius: var(--borderRadius-xxl);
 }
 
 .payment-text {

@@ -7,4 +7,15 @@
   --mainColor: rgba(10, 54, 65, 1);
   /* Hover background color for buttons, background for box */
   --boxHoverColor: rgba(177, 112, 47, 0.5);
+  /* background-color for body */
+  --backgrounColor: #f4f4f4;
+  /* background-color for cart */
+  --backgroundColor-cart: rgb(255, 255, 255);
+
+  /* border-radius*/
+  --borderRadius-s: 5px;
+  --borderRadius: 8px;
+  --borderRadius-lg: 10px;
+  --borderRadius-xl: 20px;
+  --borderRadius-xxl: 50%;
 }
