@@ -31,7 +31,7 @@
     <main>
         <h1>cart</h1>
         <section class="shopping-cart">
-            <div class="cartTotalContainer">
+            <div class="cart-total-container">
                 <div class="cart-total">
                     <p>Cart total</p>
                     <p>Total</p>
@@ -43,8 +43,8 @@
             </div>
         </section>
         <section class="shipping-container">
-            <div>
-                <form class="text-align-left" action="form-success.php" method="post">
+            <form class="text-left" action="/checkout/confirmation/index.html" method="post">
+                <div>
                     <fieldset>
                         <legend id="checkOut">
                             <h3>Billing details</h3>
@@ -64,44 +64,42 @@
                         <label for="Additional_info">Additional information</label>
                         <input type="text" name="Additional_info" id="Additional_info" class="form__input">
                     </fieldset>
-                </form>
-            </div>
-            <section class="shipping-method-container">
-                <fieldset>
-                    <legend>
-                        <h3>Shipping methods</h3>
-                    </legend>
-                    <select name="shipping_methods" id="shipping_methods">
-                        <option value="Economy">Economy</option>
-                        <option value="Regular">Regular</option>
-                        <option value="PickUp">Pick up in store</option>
-                    </select>
-                </fieldset>
-                <div class="text-align-left">
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>
+                            <h3>Shipping methods</h3>
+                        </legend>
+                        <select name="shipping_methods" id="shipping_methods" required>
+                            <option value="Economy">Economy</option>
+                            <option value="Regular">Regular</option>
+                            <option value="PickUp">Pick up in store</option>
+                        </select>
+                    </fieldset>
                     <fieldset>
                         <legend>
                             <h3>Payment methods</h3>
                         </legend>
-                        <input type="radio" id="Kreditcard" name="payment_methode" value="Kreditcard">
+                        <input type="radio" id="Kreditcard" name="payment_method" value="Creditcard" required>
                         <label for="CreditCard">Credit card</label> <br>
-                        <input type="radio" id="GooglePay" name="payment_methode" value="GooglePay">
+                        <input type="radio" id="GooglePay" name="payment_method" value="GooglePay">
                         <label for="GooglePay">Google Pay</label><br>
-                        <input type="radio" id="PayPal" name="payment_methode" value="PayPal">
+                        <input type="radio" id="PayPal" name="payment_method" value="PayPal">
                         <label for="PayPal">PayPal</label>
-                </div>
-                <input type="checkbox" id="email-updates">
-                <label for="email-updates">Sign up for our newsletters</label>
-                <br>
-                <input type="checkbox" id="personalData">
-                <label for="personalData">I understand the terms</label>
-                <article style="font-size: 16px;">Your personal data will be used to support your experience throughout
-                    this website, to manage
-                    access to your account, and for other purposes described in our privacy policy.</article>
-                <input type="buy product" value="Place Order" class="btn btn-small"
-                    onclick="window.location.href=`./confirmation/index.html`" aria-label="Place Order">
+                    </fieldset>
+                    <input type="checkbox" id="email-updates">
+                    <label for="email-updates">Sign up for our newsletters</label>
+                    <br>
+                    <input type="checkbox" id="personalData" name="personalData" required>
+                    <label for="personalData">I understand the terms</label>
+                    <article style="font-size: 16px;">Your personal data will be used to support your experience
+                        throughout
+                        this website, to manage
+                        access to your account, and for other purposes described in our privacy policy.</article>
+                    <input type="submit" value="Place Order" class="btn btn-small" aria-label="Place Order">
 
-                </fieldset>
-            </section>
+                </div>
+            </form>
         </section>
     </main>
     <div class="divider-line"></div>

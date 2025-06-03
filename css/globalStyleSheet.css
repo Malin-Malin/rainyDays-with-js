@@ -60,7 +60,7 @@ a {
 
 .btn {
   font-size: 1.2rem;
-  padding: 8px 60px;
+  padding: 8px 50px;
   border-radius: var(--borderRadius);
   text-align: center;
   transition: all 1s ease-in-out;
@@ -79,6 +79,13 @@ a {
   border: none;
 }
 
+.btnShop {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 20px;
+  margin: 5px;
+}
+
 @media (max-width: 900px) {
   .btn {
     padding: 8px 40px;
@@ -86,7 +93,6 @@ a {
     width: auto;
     height: auto;
     white-space: nowrap;
-    display: inline-block;
   }
 }
 
@@ -117,10 +123,10 @@ img {
   }
 }
 
-.text-align-left {
+.text-left {
   text-align: left;
 }
-.text-align-center {
+.text-center {
   text-align: center;
 }
 

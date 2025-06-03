@@ -76,8 +76,7 @@
 
 .contact-container1,
 .contact-container2,
-.shipping-container div,
-.shipping-method-container {
+.shipping-container > form > div {
   background-color: var(--backgroundColor-cart);
   padding: 30px;
   margin: 10px;
@@ -106,15 +105,13 @@
 
 .contact-container1,
 .contact-container2,
-.shipping-container div,
-.shipping-method-container {
+.shipping-container > form > div {
   background-color: var(--backgroundColor-cart);
   padding: 30px;
   margin: 10px;
 }
 
-.shipping-container div,
-.shipping-method-container {
+.shipping-container > form > div {
   flex: 1;
 }
 
@@ -125,7 +122,6 @@
   }
 }
 @media (max-width: 900px) {
-  .shipping-method-container,
   .shipping-container div {
     justify-content: center;
     width: 88%;

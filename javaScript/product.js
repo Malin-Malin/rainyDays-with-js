@@ -22,11 +22,11 @@ async function fetchProductById(productId) {
 function displaySingleProduct(product) {
   resultsContainer.innerHTML = "";  // Clear previous content
 
-  const productElement = document.createElement("div");
+  // const productElement = document.createElement("div");
 
-  productElement.classList.add("product-container");
-  productElement.innerHTML = `
-      <h1>${product.title}</h1>
+  // productElement.classList.add("product-container");
+  resultsContainer.innerHTML = `
+      <h1 class="text-center">${product.title}</h1>
       <div class="product-details">
       <img src="${product.image.url}" alt="${product.image.alt}">
       <div>
@@ -45,9 +45,9 @@ function displaySingleProduct(product) {
     window.location.href = "/index.html#product-container"; // Redirect to home page
   });
 
-  productElement.appendChild(buttonElement);
+  resultsContainer.appendChild(buttonElement);
   
-  resultsContainer.appendChild(productElement);
+  // resultsContainer.appendChild(productElement);
 
    
 }
