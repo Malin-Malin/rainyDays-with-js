@@ -76,7 +76,7 @@
 
 .contact-container1,
 .contact-container2,
-.shippingInfoContainer div,
+.shipping-container div,
 .shipping-method-container {
   background-color: white;
   padding: 30px;
@@ -106,14 +106,14 @@
 
 .contact-container1,
 .contact-container2,
-.shippingInfoContainer div,
+.shipping-container div,
 .shipping-method-container {
   background-color: white;
   padding: 30px;
   margin: 10px;
 }
 
-.shippingInfoContainer div,
+.shipping-container div,
 .shipping-method-container {
   flex: 1;
 }
@@ -126,7 +126,7 @@
 }
 @media (max-width: 900px) {
   .shipping-method-container,
-  .shippingInfoContainer div {
+  .shipping-container div {
     justify-content: center;
     width: 88%;
   }

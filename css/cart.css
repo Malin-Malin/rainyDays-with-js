@@ -1,24 +1,24 @@
 /*Cart/ checkout page*/
 
-.shoppingCartContainer {
+.shopping-cart {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 30px;
 }
 
-.productInCart {
+.product-cart {
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
 }
 
-.productInCart img {
+.product-cart img {
   width: 200px;
   height: auto;
 }
 
-.productInCart p {
+.product-cart p {
   font-size: 1.5rem;
   margin: 0;
 }
@@ -32,10 +32,6 @@
   padding: 10px;
 }
 
-.paymentMethods {
-  text-align: left;
-}
-
 .cartTotalContainer {
   background-color: var(--boxHoverColor);
   width: 300px;
@@ -47,7 +43,7 @@
   align-items: center;
 }
 
-.cartTotal {
+.cart-total {
   background-color: white;
   width: 230px;
   height: 280px;
@@ -58,12 +54,12 @@
   align-items: center;
 }
 
-.cartTotal p {
+.cart-total p {
   font-size: 1.2rem;
   margin: 10px 0;
 }
 
-.shippingInfoContainer {
+.shipping-container {
   background-color: var(--boxHoverColor);
   display: flex;
   justify-content: center;
@@ -71,32 +67,32 @@
 }
 
 @media (max-width: 900px) {
-  .shippingInfoContainer {
+  .shipping-container {
     flex-direction: column;
     align-items: center;
   }
-  .shoppingCartContainer {
+  .shopping-cart {
     flex-direction: row;
     align-items: center;
   }
-  .productInCart {
+  .product-cart {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .productInCart p {
+  .product-cart p {
     text-align: center;
     flex-direction: column;
   }
-  .cartTotal {
+  .cart-total {
     width: 80%;
   }
 }
 
 @media (max-width: 560px) {
-  .shoppingCartContainer {
+  .shopping-cart {
     flex-direction: column-reverse;
     align-items: center;
     padding: 0 30px;
@@ -105,7 +101,7 @@
     margin: 30px 0;
     height: auto;
   }
-  .cartTotal {
+  .cart-total {
     background-color: white;
     flex-direction: row;
     width: 230px;
@@ -117,7 +113,7 @@
     flex-wrap: wrap;
     padding: 20px;
   }
-  .productInCart {
+  .product-cart {
     width: 100%;
     margin-bottom: 20px;
   }
