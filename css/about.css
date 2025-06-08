@@ -18,6 +18,7 @@
   .about {
     grid-template-columns: 1fr;
     padding: 20px;
+    margin: auto 10px;
   }
   .about-text {
     max-width: 100%;
