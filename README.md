@@ -1,4 +1,4 @@
-# Rainy Days - [Interactive Online Store](https://malin-malin.github.io/rainyDays-with-js/index.html)
+# Rainy Days - [Live Site](https://rainy-days-malin.netlify.app/)
 
 ## Project Overview
 
