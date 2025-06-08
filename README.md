@@ -59,5 +59,5 @@ https://v2.api.noroff.dev/rainy-days
 RainyDays has design and code by Malin Skrettingland.
 
 <p align="center">
-  <img src="image/Cartoon-style-portrait-01.05.jpg" alt="Cartoon-style portrait" width="400">
+  <img src="/Images/Cartoon-style-portrait-01.05.jpg" alt="Cartoon-style portrait" width="400">
 </p>
